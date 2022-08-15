@@ -9,7 +9,11 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v3
-      - name: Build
+#      - name: Build
+#        run: |
+#          cd CPP/7zip/Bundles/Alone2
+#          make -j -f ../../cmpl_mac_arm64.mak
+      - name: Build double
         run: |
           cd CPP/7zip/Bundles/Alone2
-          make -j -f ../../cmpl_mac_arm64.mak
+          make -j -f ../../cmpl_mac.mak
