@@ -1,4 +1,4 @@
-PLATFORM=arm64
+PLATFORM=macos
 O=b/c_$(PLATFORM)
 IS_X64=1
 IS_X86=
