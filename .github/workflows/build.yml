@@ -22,6 +22,9 @@ jobs:
         run: |
           cd ${GITHUB_WORKSPACE}/CPP/7zip/Bundles/Alone2
           lipo -create b/m_x64/7zz b/m_arm64/7zz -output b/7zz
+      - name: Test
+        run: |
+          ${GITHUB_WORKSPACE}/CPP/7zip/Bundles/Alone2/b/7zz b
       - name: Upload binaries
         uses: actions/upload-artifact@v3
         with:
